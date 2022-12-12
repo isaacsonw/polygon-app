@@ -21,6 +21,7 @@ const PageRoutes = () => {
         <Route path='/' element={<Navigate replace to={PAGES_URL.LOGIN} />} />
         <Route element={<PrivateRoutes />}>
           <Route path={PAGES_URL.CREATE} element={<CreatePolygon />} />
+          <Route path={PAGES_URL.UPDATE} element={<CreatePolygon />} />
           <Route path={PAGES_URL.DASHBOARD} element={<Dashboard />} />
         </Route>
         <Route path='*' element={<NotFound />} />

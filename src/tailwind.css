@@ -91,5 +91,6 @@ html {
 }
 
 canvas {
-  border: 1px solid black;
+  border: 2px dashed rgb(210, 209, 209);
+  object-fit: contain;
 }

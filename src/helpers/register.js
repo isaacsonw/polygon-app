@@ -18,13 +18,20 @@ const registerUser = (userData, callback) => {
 
   token.set(tokenData);
 
-  Users.push({
+  const newUser = {
     ...userData,
     polygons: [],
     _id: email + password
-  });
+  };
+
+  Users.push(newUser);
 
   sessionStorage.setItem("Users", JSON.stringify(Users));
+  data["user"] = {
+    ...newUser
+  };
+
+  token.set(JSON.stringify(data), "User-Data");
 
   callback(PAGES_URL.DASHBOARD);
 };

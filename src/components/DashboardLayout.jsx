@@ -54,10 +54,10 @@ export const DashboardLayout = ({ children }) => {
               </li>
               <li className='nav-item pl-4 text-sm absolute -right-60 flex items-center '>
                 <div className='bg-white p-1 h-8 w-8 flex justify-center items-center          text-sm m-0 text-grey80 rounded-full font-semibold'>
-                  {`${user?.user?.first_name.substr(
+                  {`${user?.user?.first_name?.substr(
                     0,
                     1
-                  )}${user?.user?.last_name.substr(0, 1)}`}
+                  )}${user?.user?.last_name?.substr(0, 1)}`}
                 </div>
                 <div className='pl-2'>
                   <span>{`${user?.user?.first_name} ${user?.user?.last_name}`}</span>
