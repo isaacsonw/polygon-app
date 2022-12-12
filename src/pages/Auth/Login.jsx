@@ -24,7 +24,6 @@ const Login = () => {
     e.preventDefault();
     if (userData) {
       const data = loginUser(userData, navigate);
-
       if (data?.error) {
         setError(data?.error);
       }

@@ -24,11 +24,14 @@ const loginUser = (userData, callback) => {
       .join("");
 
   token.set(tokenData);
+  token.set(tokenData);
 
   callback(PAGES_URL.DASHBOARD);
   data["user"] = {
     ...foundUser
   };
+
+  token.set(JSON.stringify(data), "User-Data");
 
   return data;
 };

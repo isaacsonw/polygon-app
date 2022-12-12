@@ -89,3 +89,7 @@ html {
     margin-top: 5px;
   }
 }
+
+canvas {
+  border: 1px solid black;
+}
